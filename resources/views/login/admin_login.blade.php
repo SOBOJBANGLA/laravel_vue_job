@@ -121,7 +121,7 @@
                         <div class="account-page-bg p-md-5 p-4">
                             <div class="text-center">
                                 <div class="auth-image">
-                                    <img src="{{ asset('assets/images/auth-images.svg') }}" class="mx-auto img-fluid"  alt="images">
+                                    <img src="{{ asset('assets/images/rocket.png') }}" class="mx-auto img-fluid"  alt="images">
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 04, 2025 at 02:57 AM
+-- Generation Time: Jan 19, 2025 at 02:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -126,7 +126,11 @@ INSERT INTO `applicants` (`id`, `name`, `email`, `contact`, `cv`, `candidate_id`
 (62, 'Sakin', 'sakin@gmail.com', '564879332', 'images/20250103143857.pdf', 12, 18, 19, 'Apply Pending', '2025-01-03 08:38:57', '2025-01-03 08:38:57'),
 (63, 'Riaz khan', 'riaz@gmail.com', '4455555555', 'images/20250103153552.pdf', 14, 19, 20, 'Apply Pending', '2025-01-03 09:35:52', '2025-01-03 09:35:52'),
 (64, 'Riaz khan', 'riaz@gmail.com', '125456666', 'images/20250103153644.pdf', 14, 16, 15, 'Apply Pending', '2025-01-03 09:36:44', '2025-01-03 09:36:44'),
-(65, 'Sakin', 'sakin@gmail.com', '236666666', 'images/20250104013147.pdf', 12, 1, 3, 'Apply Pending', '2025-01-03 19:31:47', '2025-01-03 19:31:47');
+(65, 'Sakin', 'sakin@gmail.com', '236666666', 'images/20250104013147.pdf', 12, 1, 3, 'Apply Pending', '2025-01-03 19:31:47', '2025-01-03 19:31:47'),
+(66, 'Halim Ahmed', 'halim@gmail.com', '24567896555', 'images/20250104151621.pdf', 15, 16, 15, 'Apply Pending', '2025-01-04 09:16:21', '2025-01-04 09:16:21'),
+(67, 'Halim Ahmed', 'halim@gmail.com', '1254565689', 'images/20250104163203.pdf', 15, 13, 15, 'Apply Approved', '2025-01-04 10:32:03', '2025-01-04 10:33:13'),
+(68, 'Rahat', 'rahat@gmail.com', '125456444', 'images/20250104172100.pdf', 16, 16, 15, 'Apply Approved', '2025-01-04 11:21:00', '2025-01-04 11:23:17'),
+(69, 'Amin Abdullah', 'amin@gmail.com', '01234567897', 'images/20250119012739.pdf', 17, 20, 15, 'Apply Approved', '2025-01-18 19:27:39', '2025-01-18 19:29:09');
 
 -- --------------------------------------------------------
 
@@ -165,7 +169,9 @@ INSERT INTO `candidate_details` (`id`, `f_name`, `l_name`, `occupation`, `phone`
 (17, 'MD.', 'Sazid', 'WD', '01639008885', 'Khilgaon', 'hhhh', 'images/20241220033606.jpg', 'images/20241220033606.pdf', 8, 1, '2024-12-19 21:36:06', '2024-12-19 21:36:06'),
 (18, 'Md', 'Wasim', 'WD', '012456698', 'ffffffff', 'eeeeeee', 'images/20241221152846.jpg', 'images/20241221152846.pdf', 9, 1, '2024-12-21 09:28:46', '2024-12-21 09:28:46'),
 (19, 'Tabriz', 'Khan', 'WD', '01234567897', 'Khulna', 'rrrrr', 'images/20241222123933.jpg', 'images/20241222123933.pdf', 10, 1, '2024-12-22 06:39:33', '2024-12-22 06:39:33'),
-(20, 'Galib', 'Khan', 'WD', '01234567897', 'Barishal', 'lkjiuou', 'images/20241223132633.jpg', 'images/20241223132633.pdf', 11, 1, '2024-12-23 07:26:33', '2024-12-23 07:26:33');
+(20, 'Galib', 'Khan', 'WD', '01234567897', 'Barishal', 'lkjiuou', 'images/20241223132633.jpg', 'images/20241223132633.pdf', 11, 1, '2024-12-23 07:26:33', '2024-12-23 07:26:33'),
+(21, 'Rahat', 'Islam', 'WD', '55555555555', 'Faridpur', 'fffffffffff', 'images/20250104181438.jpg', 'images/20250104181438.pdf', 16, 1, '2025-01-04 12:14:38', '2025-01-04 12:14:38'),
+(22, 'Md.', 'Amin', 'WD', '012345678', 'Gazipur', 'ssssss', 'images/20250119012641.jpg', 'images/20250119012641.pdf', 17, 1, '2025-01-18 19:26:41', '2025-01-18 19:26:41');
 
 -- --------------------------------------------------------
 
@@ -342,15 +348,14 @@ INSERT INTO `jobs` (`id`, `title`, `employeer_id`, `company_id`, `location_id`, 
 (8, 'Teacher(Bangla)', 15, 7, 5, 3, 1, 2, '20000', 'eeee', 'rrrrrr', 'wwww', 'ddddd', 'eeeeee', '2', 'www.hhh.com', '2024-12-24 00:00:00', 1, 0, '2024-12-03 10:50:17', '2024-12-03 10:50:17'),
 (9, 'Cashier', 9, 6, 3, 1, 1, 2, '20000', 'ddddd', 'bbb', 'rrrrrrr', 'qqqqq', 'kkkk', '2 Years', 'www.fff.com', '2024-12-16 00:00:00', 1, 0, '2024-12-03 12:34:32', '2024-12-03 12:34:32'),
 (10, 'Junior Developer', 15, 5, 4, 4, 2, 2, '20000', 'sssssssssss', 'bbbbbbbbbbb', 'rrrrrrrrrrrrrrr', 'qqqqqqqqqqqqqqq', 'kkkkkkkkkkkkkk', '0', 'www.jakir.com', '2024-12-18 00:00:00', 1, 0, '2024-12-05 21:37:38', '2024-12-05 21:37:38'),
-(11, 'Senior Developer', 15, 5, 2, 4, 4, 15, '25000', 'ffffffff', 'tttttttttt', 'eeeeeeeeee', 'qqqqqqqqqqq', 'fffffffffffff', '2', 'www.jakir.com', '2024-12-27 00:00:00', 1, 0, '2024-12-05 21:42:11', '2024-12-05 21:42:11'),
-(12, 'Senior Developer', 15, 5, 4, 4, 1, 2, '40000', 'fffffffffff', 'eeeeeeeeee', 'ttttttttt', 'wwwwwwwww', 'tyyyyyyyyy', '2', 'www.jakir.com', '2024-12-25 00:00:00', 1, 1, '2024-12-05 21:45:54', '2024-12-11 07:41:47'),
 (13, 'Teacher(English)', 15, 5, 2, 3, 1, 6, '21000', 'fffffffffff', 'gggggggggg', 'rrrrrrrrrrrrr', 'wwwwwwwwwwwwww', 'eeeeee', '2 Year', 'www.jakir.com', '2024-12-24 00:00:00', 1, 1, '2024-12-11 07:45:23', '2024-12-11 07:48:57'),
 (14, 'Junior operator', 15, 5, 1, 2, 1, 2, '12000', 'ggggg', 'ttt', 'yyyyyy', 'uuuuuuuu', 'rrrrrrrr', '2 Years', 'www.jakir.com', '2024-12-24 00:00:00', 0, 1, '2024-12-11 07:50:24', '2024-12-11 07:51:36'),
 (15, 'Trainee Officer', 15, 5, 3, 2, 1, 2, '20000', 'dddddd', 'bbbbbb', 'rrrrrrrrr', 'qqqqqqqq', 'kkkkkkkkk', '0', 'www.jakir.com', '2024-12-31 00:00:00', 0, 1, '2024-12-12 08:10:49', '2024-12-23 08:50:41'),
 (16, 'Driver', 15, 5, 1, 2, 1, 2, '10000', 'fffffff', 'eeeeeeee', 'rrrrrrrrrrr', 'qqqqqqqqqq', 'hhhhhhhhh', '2 Year', 'www.jakir.com', '2024-12-25 00:00:00', 1, 0, '2024-12-20 19:48:25', '2024-12-20 19:48:25'),
 (17, 'Quality Officer', 15, 5, 1, 1, 1, 5, '20000', 'dddddddddd', 'bbbbbbbbb', 'rrrrrrrrrr', 'qqqqqqqq', 'kkkkkkkkk', '2 Years', 'www.jakir.com', '2024-12-27 00:00:00', 1, 1, '2024-12-21 09:32:00', '2024-12-21 09:33:24'),
 (18, 'Senior Engineer(Electronics)', 19, 8, 6, 5, 1, 2, '30000', 'dddddd', 'bbbbbbbb', 'ttttttttt', 'eeeeeeee', 'iiiiiiiii', '2 Year', 'www.walton.com', '2025-01-28 00:00:00', 1, 0, '2024-12-23 08:49:27', '2025-01-02 11:46:03'),
-(19, 'Security Officer', 20, 9, 7, 6, 1, 3, '15000', 'ddddddd', 'bbbbbbbbb', 'rrrrrrrrrr', 'qqqqqqqqqqqqq', 'kkkkkkkkkkkkk', '2 Years', 'www.ytis.com', '2025-01-14 00:00:00', 1, 1, '2025-01-02 11:11:45', '2025-01-02 11:47:57');
+(19, 'Security Officer', 20, 9, 7, 6, 1, 3, '15000', 'ddddddd', 'bbbbbbbbb', 'rrrrrrrrrr', 'qqqqqqqqqqqqq', 'kkkkkkkkkkkkk', '2 Years', 'www.ytis.com', '2024-12-29 00:00:00', 0, 0, '2025-01-02 11:11:45', '2025-01-18 19:17:48'),
+(20, 'Sr. Engineer', 15, 5, 1, 5, 1, 1, '30000', 'dddddd', 'bbbbbbbbb', 'rrrrrrrrrrr', 'qqqqqqqqqqq', 'kkkkkkkkkk', '2 Years', 'www.jakir.com', '2025-01-28 00:00:00', 1, 1, '2025-01-18 19:21:04', '2025-01-18 19:23:17');
 
 -- --------------------------------------------------------
 
@@ -504,7 +509,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (11, 'Galib', 'galib@gmail.com', NULL, '$2y$10$.VdjPLU3vLkV79mliwZbfuaqE0b75JA2lEcOGPOJp5Bcg/Mi2EU72', NULL, '2024-12-23 07:25:11', '2024-12-23 07:25:11'),
 (12, 'Sakin', 'sakin@gmail.com', NULL, '$2y$10$aUlUZvFcEmKOr7VZzQIE1u9t7BGe0f03mbZjuwUBzqxOgJpxUd5AG', NULL, '2025-01-02 07:14:33', '2025-01-02 07:14:33'),
 (13, 'Kazim', 'kazim@gmail.com', NULL, '$2y$10$RdIQa1.y3.Hkp8uyCmEQsOUofByYa3mCEbX2erPGpdvUXmfiSFVTW', NULL, '2025-01-02 09:14:16', '2025-01-02 09:14:16'),
-(14, 'Riaz khan', 'riaz@gmail.com', NULL, '$2y$10$ZSeP3WRnHouI3.OUui0H8.kvVAR0ya.10Vab70tuCLJjcEteczkkm', NULL, '2025-01-03 09:08:18', '2025-01-03 09:08:18');
+(14, 'Riaz khan', 'riaz@gmail.com', NULL, '$2y$10$ZSeP3WRnHouI3.OUui0H8.kvVAR0ya.10Vab70tuCLJjcEteczkkm', NULL, '2025-01-03 09:08:18', '2025-01-03 09:08:18'),
+(15, 'Halim Ahmed', 'halim@gmail.com', NULL, '$2y$10$ahAmCfxcV45fcqTvClRYvOSD.O5IhsnYirjX0XgArcpobEOhgoz7u', NULL, '2025-01-04 09:14:01', '2025-01-04 09:14:01'),
+(16, 'Rahat', 'rahat@gmail.com', NULL, '$2y$10$9.U9eSRtJDMHak8LtaGaSOHfmfboZOg6tAZrtf.ifySG8DIoMsF7m', NULL, '2025-01-04 11:16:38', '2025-01-04 11:16:38'),
+(17, 'Amin Abdullah', 'amin@gmail.com', NULL, '$2y$10$DBmz.6W7bISNy8Y2Z9wiJuhgsXNB2lTOS4tZ597REAaG/wEudJMHi', NULL, '2025-01-18 19:16:00', '2025-01-18 19:16:00');
 
 --
 -- Indexes for dumped tables
@@ -620,13 +628,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `applicants`
 --
 ALTER TABLE `applicants`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `candidate_details`
 --
 ALTER TABLE `candidate_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -662,7 +670,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `jobtypes`
@@ -692,7 +700,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
