@@ -31,11 +31,10 @@
                         <p class="text-muted">{{job.qualifications}}</p>
 
                         <div v-if="user" class="mt-4">
-                            <!-- <a href="job-apply.html" class="btn btn-outline-primary">Apply Now <i class="mdi mdi-send"></i></a> -->
+                            
                             <button v-if="application" type="button" class="btn btn-warning">Already Applied</button>
                              <Link v-else :href="route('applicant.create', job.id)" class="btn btn-outline-primary"> Apply Now <i class="mdi mdi-send"></i> </Link>
-                             <!-- <button v-else type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Apply Now</button>
-                             <Modal></Modal> -->
+                           
                         </div>
 
                         <div v-else>
