@@ -33,7 +33,7 @@
 
                             <div class="mt-3 mt-md-0">
                                 <a href="" class="btn btn-sm btn-icon btn-pills btn-soft-primary bookmark"><i data-feather="bookmark" class="icons"></i></a>
-                                <a href="job-detail-one.html" class="btn btn-sm btn-primary w-full ms-md-1">Apply Now</a>
+                                <Link :href="route('jobDetail', { id: joi.id })" class="btn btn-sm btn-primary w-full ms-md-1">Apply Now</Link>
                             </div>
                         </div>
                     </div><!--end col-->
